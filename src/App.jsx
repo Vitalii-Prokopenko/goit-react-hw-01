@@ -4,8 +4,10 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Profile from "./components/profile/Profile";
 import FriendList from "./components/friendlist/Friendlist";
+import TransactionHistory from "./components/transactionhistory/TransactionHistory"
 import userData from "./userData.json";
 import friends from "./friends.json";
+import transactions from "./transactions.json";
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         stats={userData.stats}
       />
       <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </>
   );
 }
